@@ -33,3 +33,13 @@ else: #si n es 0 o 1, la suma siempre será 0 y se imprime el unico valor anteri
 #FIN PROC *************************************************************************    
 #Salida:    
 print("La suma es ",s)
+
+#*****OPCIÓN MÁS SIMPLE******************************************************************************
+a1=1
+a2=1
+N=int(input("Ingrese nro :"))
+f=1
+for i in range(2,N):
+    f=a1+a2
+    a1,a2=a2,f
+print(f)
