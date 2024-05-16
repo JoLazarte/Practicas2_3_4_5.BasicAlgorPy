@@ -9,10 +9,10 @@ Desarrollar un programa para calcular el factorial de un número dado. Deberán 
 n=int(input("Ingrese nro de termino: "))
 
 #inicializacion
-Factorial=1 #porque 1 es el primer num entero mayor a 0
+Factorial=1 #porque 1 es el primer num entero mayor a 0 y porque fact(0)=1 y fact(1)=1
 
 #Proc: 
-for c in range(2,n+1): #ya inicializamos a Factorial como 1, no queremos multiplicar 1 x 1, sino 1 x 2 => emepzamos el bucle con 2
+for c in range(1,n+1): #empezamos a calcular desde fact(1): 1 x 1 hasta fact(n): n * fact(n-1).
     #Subproceso:
     Factorial*=c
     #print(Factorial)
